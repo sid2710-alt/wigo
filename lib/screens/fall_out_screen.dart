@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wigo/screens/dash_board_screen.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
@@ -51,7 +52,12 @@ class _WelcomeState extends State<Welcome> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 ElevatedButton(onPressed: () {}, child: Text('Login As Admin')),
-                ElevatedButton(onPressed: () {}, child: Text('Login as Seller'))
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => DashboardScreen()));
+                    },
+                    child: Text('Login as Seller'))
               ],
             ),
           ],
