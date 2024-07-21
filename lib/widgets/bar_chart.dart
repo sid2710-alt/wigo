@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:wigo/app_text_styles.dart';
 
 class WeekSalesChart extends StatelessWidget {
   const WeekSalesChart({super.key});
@@ -88,59 +89,68 @@ class WeekSalesChart extends StatelessWidget {
       ),
     ];
 
-    return Container(
-        padding: EdgeInsets.all(20),
-        child: BarChart(
-          BarChartData(
-              maxY: 60,
-              barGroups: showingBarGroups,
-              alignment: BarChartAlignment.spaceBetween,
-              groupsSpace: 0,
-              borderData: FlBorderData(show: false),
-              titlesData: FlTitlesData(
-                  show: true,
-                  bottomTitles: AxisTitles(
-                    sideTitles: SideTitles(
-                        showTitles: true,
-                        getTitlesWidget: (double value, TitleMeta meta) {
-                          return const Text('Mon');
-                        },
-                        reservedSize: 30),
-                  ),
-                  leftTitles: AxisTitles(
-                    sideTitles: SideTitles(
-                      showTitles: false,
-                      interval: 10,
-                      // getTextStyles: (context, value) => const TextStyle(
-                      //   color: Colors.black,
-                      //   fontSize: 10,
-                      // ),
-                      reservedSize: 30,
-                    ),
-                  ),
-                  rightTitles: AxisTitles(
-                    sideTitles: SideTitles(
-                      showTitles: false,
-                      interval: 10,
-                      // getTextStyles: (context, value) => const TextStyle(
-                      //   color: Colors.black,
-                      //   fontSize: 10,
-                      // ),
-                      reservedSize: 30,
-                    ),
-                  ),
-                  topTitles: AxisTitles(
-                    sideTitles: SideTitles(
-                      showTitles: false,
-                      interval: 10,
-                      // getTextStyles: (context, value) => const TextStyle(
-                      //   color: Colors.black,
-                      //   fontSize: 10,
-                      // ),
-                      reservedSize: 30,
-                    ),
-                  )),
-              gridData: FlGridData(drawVerticalLine: false)),
-        ));
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Text(
+            'Sales Stats',
+            style: CustomTextStyle.lBold(null),
+          ),
+          Expanded(
+            child: BarChart(
+              BarChartData(
+                  maxY: 60,
+                  barGroups: showingBarGroups,
+                  alignment: BarChartAlignment.spaceBetween,
+                  groupsSpace: 0,
+                  borderData: FlBorderData(show: false),
+                  titlesData: FlTitlesData(
+                      show: true,
+                      bottomTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                            showTitles: true,
+                            getTitlesWidget: (double value, TitleMeta meta) {
+                              return const Text('Mon');
+                            },
+                            reservedSize: 30),
+                      ),
+                      leftTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
+                          interval: 10,
+                          // getTextStyles: (context, value) => const TextStyle(
+                          //   color: Colors.black,
+                          //   fontSize: 10,
+                          // ),
+                          reservedSize: 30,
+                        ),
+                      ),
+                      rightTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
+                          interval: 10,
+                          // getTextStyles: (context, value) => const TextStyle(
+                          //   color: Colors.black,
+                          //   fontSize: 10,
+                          // ),
+                          reservedSize: 30,
+                        ),
+                      ),
+                      topTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: false,
+                          interval: 10,
+                          // getTextStyles: (context, value) => const TextStyle(
+                          //   color: Colors.black,
+                          //   fontSize: 10,
+                          // ),
+                          reservedSize: 30,
+                        ),
+                      )),
+                  gridData: FlGridData(drawVerticalLine: false)),
+            ),
+          ),
+        ]);
   }
 }
