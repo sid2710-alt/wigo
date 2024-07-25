@@ -12,7 +12,7 @@ class DishList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            padding: EdgeInsets.all(16.0),
+            margin: EdgeInsets.all(5.0),
             decoration: const BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.only(
@@ -21,28 +21,37 @@ class DishList extends StatelessWidget {
                     bottomRight: Radius.circular(10),
                     topRight: Radius.circular(50))),
             child: Column(children: [
-              Flexible(
+              Expanded(
                 flex: 5,
                 child: Container(
-                  color: Colors.blue,
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          topRight: Radius.circular(50))),
+                  width: 123,
+                  child: Icon(Icons.food_bank_sharp),
                 ),
               ),
-              Flexible(
+              Expanded(
                   flex: 3,
                   child: Text(menuItems[index].name,
                       style: CustomTextStyle.lBold(null))),
-              Flexible(
+              Expanded(
                 flex: 1,
                 child: Text(
                   menuItems[index].price.toString(),
                   style: CustomTextStyle.mNormal(null),
                 ),
               ),
-              Flexible(
-                  flex: 3,
-                  child: Text(
-                    'Bought Today: 5',
-                    style: CustomTextStyle.mBold(null),
+              Expanded(
+                  flex: 2,
+                  child: Padding(
+                    padding: EdgeInsets.all(2.0),
+                    child: Text(
+                      'Bought Today: 5',
+                      style: CustomTextStyle.mBold(null),
+                    ),
                   ))
             ]),
           );
