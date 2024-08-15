@@ -1,32 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:wigo/screens/fall_out_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:wigo/constants/constants.dart';
+import 'package:wigo/views/entrypoint.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Wigo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.deepPurple,
-            primary: Color(0xffbd5cff),
-            tertiary: Color(0xff58297d)),
-        elevatedButtonTheme: const ElevatedButtonThemeData(
-          style: ButtonStyle(
-              textStyle:
-                  MaterialStatePropertyAll(TextStyle(color: Colors.white)),
-              backgroundColor: MaterialStatePropertyAll(Color(0xfff6b800))),
-        ),
-        useMaterial3: true,
-      ),
-      home: const Welcome(),
+    //Set the fit size (Find your UI design, look at the dimensions of the device screen and fill it in,unit in dp)
+    return ScreenUtilInit(
+      designSize: const Size(375, 825),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      // Use builder only if you need to use library outside ScreenUtilInit context
+      builder: (_, child) {
+        return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Wigo',
+          // You can use the library anywhere in the app even in theme
+          theme: ThemeData(
+            scaffoldBackgroundColor: kOffWhite,
+            iconTheme: const IconThemeData(color: kDark),
+            primarySwatch: Colors.grey,
+          ),
+          home: MainScreen(),
+        );
+      },
     );
   }
 }
