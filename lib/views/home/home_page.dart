@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wigo/common/custom_appbar.dart';
 import 'package:wigo/common/custom_container.dart';
 import 'package:wigo/constants/constants.dart';
+import 'package:wigo/views/home/widgets/category_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,7 +14,12 @@ class HomePage extends StatelessWidget {
       backgroundColor: kPrimary,
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(130.h), child: const CustomAppBar()),
-      body: SafeArea(child: CustomContainer(containerContent: Container())),
+      body: const SafeArea(
+          child: CustomContainer(
+        containerContent: Column(
+          children: [CategoryList()],
+        ),
+      )),
     );
   }
 }
