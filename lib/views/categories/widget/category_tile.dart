@@ -6,7 +6,7 @@ import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:wigo/common/app_style.dart';
 import 'package:wigo/common/reusable_text.dart';
 import 'package:wigo/constants/constants.dart';
-import 'package:wigo/views/home/widgets/category_page.dart';
+import 'package:wigo/views/categories/category_page.dart';
 
 class CategoryTile extends StatelessWidget {
   const CategoryTile({
