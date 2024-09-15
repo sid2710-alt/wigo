@@ -9,12 +9,12 @@ import 'package:wigo/constants/constants.dart';
 import 'package:wigo/views/categories/all_categories.dart';
 
 class CategoryWidget extends StatelessWidget {
-  CategoryWidget({
+  const CategoryWidget({
     super.key,
     required this.category,
   });
 
-  var category;
+  final category;
 
   @override
   Widget build(BuildContext context) {

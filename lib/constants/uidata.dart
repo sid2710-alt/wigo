@@ -1,5 +1,7 @@
 const imageUrl =
     'https://www.dropbox.com/scl/fi/odggsb25qn3w1gyxoyeu4/chicken-skewers-with-slices-sweet-peppers-dill.jpg?rlkey=wjbe09nk6ga5nxb6xatfzekfl&st=b3km2jho&dl=0https://www.dropbox.com/scl/fi/odggsb25qn3w1gyxoyeu4/chicken-skewers-with-slices-sweet-peppers-dill.jpg?rlkey=wjbe09nk6ga5nxb6xatfzekfl&st=b3km2jho&dl=0&raw=1';
+const logoLink =
+    'https://www.dropbox.com/scl/fi/uv8kvqi7924na759h4szw/Yellow-and-Black-Minimalist-Catering-Logo.png?rlkey=qo5jrtty127dw5niuroxlzt3j&st=qhrrop9r&dl=0&raw=1';
 List<dynamic> categories = [
   {
     "_id": "6537ece708ff5b7de97d0695",
@@ -68,7 +70,7 @@ List<dynamic> categories = [
   }
 ];
 
-const restaurants = [
+List<dynamic> restaurants = [
   {
     "_id": "6530ebbcc9e72013e5b65933",
     "title": "Lapisara Eatery",
