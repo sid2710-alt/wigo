@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:wigo/constants/constants.dart';
 import 'package:wigo/constants/uidata.dart';
 import 'package:wigo/views/home/widgets/restaurant_widget.dart';
 

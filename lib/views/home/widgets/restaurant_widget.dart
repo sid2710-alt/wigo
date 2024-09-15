@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wigo/common/app_style.dart';
+import 'package:wigo/common/reusable_text.dart';
 import 'package:wigo/constants/constants.dart';
 
 class RestaurantWidget extends StatelessWidget {
@@ -73,6 +76,45 @@ class RestaurantWidget extends StatelessWidget {
                     )
                   ]),
                 ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 12.w),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ReusableText(
+                          text: title,
+                          style: appStyle(12, kDark, FontWeight.w500)),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          ReusableText(
+                              text: 'Delivery Time',
+                              style: appStyle(9, kGray, FontWeight.w500)),
+                          ReusableText(
+                              text: time,
+                              style: appStyle(9, kGray, FontWeight.w500))
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          RatingBarIndicator(
+                            rating: 5,
+                            itemBuilder: (context, index) => const Icon(
+                              Icons.star,
+                              color: kPrimary,
+                            ),
+                            itemCount: 5,
+                            itemSize: 15.h,
+                          ),
+                          SizedBox(width: 10.w),
+                          ReusableText(
+                              text: '+$ratingCount reviews and ratings ',
+                              style: appStyle(9, kGray, FontWeight.w500))
+                        ],
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
           ),

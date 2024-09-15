@@ -75,8 +75,7 @@ List<dynamic> restaurants = [
     "_id": "6530ebbcc9e72013e5b65933",
     "title": "Lapisara Eatery",
     "time": "6:00am - 9:00pm",
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "owner": "fdfsdfsdfs",
     "code": "41007428",
     "logoUrl":
@@ -97,8 +96,7 @@ List<dynamic> restaurants = [
     "_id": "6530ea6bc9e72013e5b6592d",
     "title": "Burger King",
     "time": "6:00am - 9:00pm",
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "owner": "sjgdsjgfjshhjs",
     "code": "41007428",
     "logoUrl":
@@ -119,8 +117,7 @@ List<dynamic> restaurants = [
     "_id": "6530eb66c9e72013e5b65931",
     "title": "La Foods",
     "time": "6:00am - 9:00pm",
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "owner": "fgdgdfgd",
     "code": "41007428",
     "logoUrl":
@@ -141,8 +138,7 @@ List<dynamic> restaurants = [
     "_id": "6530eb23c9e72013e5b6592f",
     "title": "Italian Restaurant",
     "time": "6:00am - 9:00pm",
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "owner": "sjgdsjgfjshhjs",
     "code": "41007428",
     "logoUrl":
@@ -182,8 +178,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 4, "title": "Cocoa", "price": "0.50"},
       {"id": 5, "title": "Sugar", "price": "0.50"}
     ],
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "35 min"
@@ -208,8 +203,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 4, "title": "Black Pepper", "price": "0.50"},
       {"id": 5, "title": "Pasta", "price": "3.00"}
     ],
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "__v": 2,
     "category": "6531209dbbe4998e90af3fef",
     "time": "20 min"
@@ -234,8 +228,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 4, "title": "Cherry Tomatoes", "price": "1.00"},
       {"id": 5, "title": "Vinaigrette", "price": "0.50"}
     ],
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "55 min"
@@ -258,8 +251,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 2, "title": "Pepperoni", "price": "2.50"},
       {"id": 3, "title": "Ketch up", "price": "0.50"}
     ],
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "30 min"
@@ -284,8 +276,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 4, "title": "Coconut Milk", "price": "1.50"},
       {"id": 5, "title": "Ice", "price": "0.50"}
     ],
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "25 min"
@@ -316,8 +307,7 @@ List<Map<String, dynamic>> foods = [
       {"id": 4, "title": "Pork", "price": "3.50"},
       {"id": 5, "title": "Barbecue Sauce", "price": "1.00"}
     ],
-    "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "imageUrl": imageUrl,
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "45 min"
