@@ -40,24 +40,24 @@ class _WelcomeState extends State<Welcome> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(),
+            const SizedBox(),
             Image.asset(
               "assets/images/logo.png",
               height: 150,
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                ElevatedButton(onPressed: () {}, child: Text('Login As Admin')),
+                ElevatedButton(onPressed: () {}, child: const Text('Login As Admin')),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => DashboardScreen()));
+                          builder: (context) => const DashboardScreen()));
                     },
-                    child: Text('Login as Seller'))
+                    child: const Text('Login as Seller'))
               ],
             ),
           ],

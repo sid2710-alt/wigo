@@ -16,7 +16,7 @@ class WeekSalesChart extends StatelessWidget {
               toY: 12,
               color: Colors.blue,
               width: 30,
-              borderRadius: BorderRadius.all(Radius.zero))
+              borderRadius: const BorderRadius.all(Radius.zero))
         ],
         showingTooltipIndicators: [12],
       ),
@@ -27,7 +27,7 @@ class WeekSalesChart extends StatelessWidget {
               toY: 18,
               color: Colors.green,
               width: 30,
-              borderRadius: BorderRadius.all(Radius.zero)),
+              borderRadius: const BorderRadius.all(Radius.zero)),
         ],
         showingTooltipIndicators: [18],
       ),
@@ -38,7 +38,7 @@ class WeekSalesChart extends StatelessWidget {
               toY: 10,
               color: Colors.red,
               width: 30,
-              borderRadius: BorderRadius.all(Radius.zero))
+              borderRadius: const BorderRadius.all(Radius.zero))
         ],
         showingTooltipIndicators: [10],
       ),
@@ -49,7 +49,7 @@ class WeekSalesChart extends StatelessWidget {
               toY: 18,
               color: Colors.green,
               width: 30,
-              borderRadius: BorderRadius.all(Radius.zero)),
+              borderRadius: const BorderRadius.all(Radius.zero)),
         ],
         showingTooltipIndicators: [18],
       ),
@@ -60,7 +60,7 @@ class WeekSalesChart extends StatelessWidget {
               toY: 18,
               color: Colors.green,
               width: 30,
-              borderRadius: BorderRadius.all(Radius.zero)),
+              borderRadius: const BorderRadius.all(Radius.zero)),
         ],
         showingTooltipIndicators: [18],
       ),
@@ -71,7 +71,7 @@ class WeekSalesChart extends StatelessWidget {
               toY: 18,
               color: Colors.green,
               width: 30,
-              borderRadius: BorderRadius.all(Radius.zero)),
+              borderRadius: const BorderRadius.all(Radius.zero)),
         ],
         showingTooltipIndicators: [18],
       ),
@@ -83,7 +83,7 @@ class WeekSalesChart extends StatelessWidget {
               toY: 50,
               color: Colors.green,
               width: 30,
-              borderRadius: BorderRadius.all(Radius.zero)),
+              borderRadius: const BorderRadius.all(Radius.zero)),
         ],
         showingTooltipIndicators: [50],
       ),
@@ -115,7 +115,7 @@ class WeekSalesChart extends StatelessWidget {
                             },
                             reservedSize: 30),
                       ),
-                      leftTitles: AxisTitles(
+                      leftTitles: const AxisTitles(
                         sideTitles: SideTitles(
                           showTitles: false,
                           interval: 10,
@@ -126,7 +126,7 @@ class WeekSalesChart extends StatelessWidget {
                           reservedSize: 30,
                         ),
                       ),
-                      rightTitles: AxisTitles(
+                      rightTitles: const AxisTitles(
                         sideTitles: SideTitles(
                           showTitles: false,
                           interval: 10,
@@ -137,7 +137,7 @@ class WeekSalesChart extends StatelessWidget {
                           reservedSize: 30,
                         ),
                       ),
-                      topTitles: AxisTitles(
+                      topTitles: const AxisTitles(
                         sideTitles: SideTitles(
                           showTitles: false,
                           interval: 10,
@@ -148,7 +148,7 @@ class WeekSalesChart extends StatelessWidget {
                           reservedSize: 30,
                         ),
                       )),
-                  gridData: FlGridData(drawVerticalLine: false)),
+                  gridData: const FlGridData(drawVerticalLine: false)),
             ),
           ),
         ]);

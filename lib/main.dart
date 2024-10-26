@@ -16,13 +16,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.deepPurple,
-            primary: Color(0xffbd5cff),
-            tertiary: Color(0xff58297d)),
+            primary: const Color(0xffbd5cff),
+            tertiary: const Color(0xff58297d)),
         elevatedButtonTheme: const ElevatedButtonThemeData(
           style: ButtonStyle(
               textStyle:
-                  MaterialStatePropertyAll(TextStyle(color: Colors.white)),
-              backgroundColor: MaterialStatePropertyAll(Color(0xfff6b800))),
+                  WidgetStatePropertyAll(TextStyle(color: Colors.white)),
+              backgroundColor: WidgetStatePropertyAll(Color(0xfff6b800))),
         ),
         useMaterial3: true,
       ),

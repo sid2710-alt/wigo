@@ -12,7 +12,7 @@ class DishList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            margin: EdgeInsets.all(5.0),
+            margin: const EdgeInsets.all(5.0),
             decoration: const BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.only(
@@ -24,13 +24,13 @@ class DishList extends StatelessWidget {
               Expanded(
                 flex: 5,
                 child: Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: Colors.green,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(10),
                           topRight: Radius.circular(50))),
                   width: 123,
-                  child: Icon(Icons.food_bank_sharp),
+                  child: const Icon(Icons.food_bank_sharp),
                 ),
               ),
               Expanded(
@@ -47,7 +47,7 @@ class DishList extends StatelessWidget {
               Expanded(
                   flex: 2,
                   child: Padding(
-                    padding: EdgeInsets.all(2.0),
+                    padding: const EdgeInsets.all(2.0),
                     child: Text(
                       'Bought Today: 5',
                       style: CustomTextStyle.mBold(null),
