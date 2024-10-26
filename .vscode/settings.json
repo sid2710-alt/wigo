@@ -1,6 +1,7 @@
 {
-    "cSpell.words": [
-        "Wigo"
-    ],
-    "java.configuration.updateBuildConfiguration": "interactive"
+  "cSpell.words": [
+    "Wigo"
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "dart.flutterSdkPath": ".fvm/versions/stable"
 }
